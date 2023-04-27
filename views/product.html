@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>MatchMeUp</title>
 </head>
 <body id="body">
@@ -16,33 +19,87 @@
 
     <!-- //main body -->
 
+    <div class="product-window">
+        <div class="product-content">
+            <div class="row">
+                <div class="col-4">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" style="width: 350px; height: 550px;">
+                            <div class="item active">
+                                <img src="/public/assets/black-slim.jfif" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="/public/assets/black-slim2.jfif" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="/public/assets/black-slim3.jfif" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="/public/assets/black-slim4.webp" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="/public/assets/black-slim5.jfif" alt="">
+                            </div>
+                        </div>
+                        <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="sr-only">Next</span>
+                        </a> -->
+                    </div>
+                    
+                </div>
+                <div class="col-8">
+                    <div style="margin-top: 40px;">
+                        <h1>Black Suit</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloribus, distinctio cum ad aspernatur eos ex facilis, dolores quas quidem nam laudantium nemo nostrum hic maxime inventore beatae laboriosam quaerat?</p>
+                    </div>
+                    <div class="price">
+                        <h2>₱30,000.00</h2>
+                    </div>
+                    <p>Stock available:</p><p>27</p>
+                    <div class="mini-pic">
+                        <img src="/public/assets/black-slim.jfif" alt="">
+                        <img src="/public/assets/black-slim2.jfif" alt="">
+                        <img src="/public/assets/black-slim3.jfif" alt="">
+                        <img src="/public/assets/black-slim4.webp" alt="">
+                        <img src="/public/assets/black-slim5.jfif" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
     <div class="container product-box">
         <h2>Products</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil obcaecati praesentium consequatur ipsum aperiam fugiat dicta tenetur necessitatibus! Placeat autem saepe, nemo quo quasi natus sint eaque sit ea vitae.</p> 
-
+        
         <div class="container">
-            <span class="border black">
+            <span class="border black" onclick="open()">
                 <div>
                     <img src="/public/assets/black-slim.jfif" alt="">
                 </div>
                 <h1>Black Suit</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae consectetur voluptate mollitia maiores soluta neque itaque illum, voluptatum distinctio ab, aliquam corporis non laudantium quaerat officia illo similique ducimus!</p>
             </span>
-            <span class="border border-0">
+            <span class="border border-0" onclick="open()">
                 <div>
                     <img src="/public/assets/mens-brown.jfif" alt="">
                 </div>
                 <h1>Brown Suit</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae consectetur voluptate mollitia maiores soluta neque itaque illum, voluptatum distinctio ab, aliquam corporis non laudantium quaerat officia illo similique ducimus!</p>
             </span>
-            <span class="border border-top-0">
+            <span class="border border-top-0" onclick="open()">
                 <div>
                     <img src="/public/assets/mens-grey.webp" alt="">
                 </div>
                 <h1>Gray Suit</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae consectetur voluptate mollitia maiores soluta neque itaque illum, voluptatum distinctio ab, aliquam corporis non laudantium quaerat officia illo similique ducimus!</p>
             </span>
-            <span class="border border-end-0">
+            <span class="border border-end-0" onclick="open()">
                 <div>
                     <img src="/public/assets/mens-navy.webp" alt="">
                 </div>
