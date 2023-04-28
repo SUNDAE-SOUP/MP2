@@ -72,71 +72,9 @@ for (var i = 0; i < miniPics.length; i++) {
   });
 }
 
-//for brown suits
-/* for (var i = 0; i < miniPics.length; i++) {
-    miniPics[i].addEventListener("click", function() {
-      // Get the index of the clicked image
-      var index = parseInt(this.getAttribute("data-index"));
-  
-      //for brown suits window
-      var items = carousel1.querySelectorAll(".item");
-      for (var k = 0; k < items.length; k++) {
-        if (k === index) {
-          items[k].classList.add("active");
-        } else {
-          items[k].classList.remove("active");
-        }
-      }
-
-    });
-  } */
-
-//for grey suits
-for (var i = 0; i < miniPics.length; i++) {
-    miniPics[i].addEventListener("click", function() {
-
-      var index = parseInt(this.getAttribute("data-index"));
-  
-      var items = carousel2.querySelectorAll(".item");
-      for (var l = 0; l < items.length; l++) {
-        if (l === index) {
-          items[l].classList.add("active");
-        } else {
-          items[l].classList.remove("active");
-        }
-      };
-      var items = carousel3.querySelectorAll(".item");
-        for (var m = 0; m < items.length; m++) {
-            if (m === index) {
-                items[m].classList.add("active");
-            } else {
-                items[m].classList.remove("active");
-            }
-        }
-      
-
-    });
-}
-
-//for navy blue suit
-/* for (var i = o; i < miniPics.length; i++) {
-    miniPics[i].addEventListener("click", function() {
-
-        var index = parseInt(this.getAttribute("data-index"));
-
-        var items = carousel3.querySelectorAll(".item");
-        for (var m = 0; m < items.length; m++) {
-            if (m === index) {
-                items[m].classList.add("active");
-            } else {
-                items[m].classList.remove("active");
-            }
-        }
-    });
-} */
 
 
-//for overlay window opening funtion
+//for overlay window opening function
 //black suit
 var product_window1 = document.getElementById('product-window1');
 
