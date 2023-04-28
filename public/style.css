@@ -39,20 +39,61 @@ img {
     /* color: #8ebd89; */
 }
 
-#myCarousel {
+
+
+.myCarousel {
     margin-top: 50px;
     margin-left: 10px;
     width: 400px;
     display: inline-block;
 }
 
-.product-window {
+#product-window1 {
     background-color: rgba(0,0,0,0.5);
     position: fixed;
-    /* display: none; */
+    display: none;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#product-window2 {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#product-window3 {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#product-window4 {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
     top: 0;
     left: 0;
     right: 0;
@@ -66,9 +107,16 @@ img {
     width: 90%;
     height: 90%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 35px;
     /* top: 50%;
     left: 50%; */
+    position: relative;
+}
+
+.close-tab {
+    position: absolute;
+    top: 0;
+    right: 5px;
 }
 
 .carousel-control {
@@ -92,13 +140,58 @@ img {
     text-align: center;
 }
 
+.stock-available {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 1fr 6fr;
+    color: #636366;
+}
+
+.size-quantity {
+    display: grid;
+    flex-direction: row;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sizes {
+    /* background-color: #8ebd89; */
+    width: 200px;
+    margin-left: 10px;
+    display: grid;
+    flex-direction: row;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.sizes > button {
+    border: 3px solid #FEC195;  
+}
+.sizes > button:hover {
+    background: transparent;
+    color: #636366;
+    box-shadow: 0 0 25px #fec1958c;
+}
+
+.size-button.clicked {
+    background: transparent;
+    color: #636366;
+    box-shadow: 0 0 25px #fec1958c;
+}
+
+.quantity > input {
+    height: 40px;
+    width: 60px;
+    margin-left: 10px;
+    border-color: #fec1958c;
+}
 
 .mini-pic {
     display: grid;
     flex-direction: row;
     grid-gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    
 }
 
 .mini-pic > img {
@@ -108,6 +201,18 @@ img {
     object-fit: cover;
     
 }
+
+.add-to-cart {
+    align-items: end;
+    width: 300px;
+    margin-top: 20px;
+    display: grid;
+    flex-direction: row;
+    grid-gap: 5px;
+    grid-template-columns: 2fr 2fr;
+}
+
+
 
 button {
     position: relative;
