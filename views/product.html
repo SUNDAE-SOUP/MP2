@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>MatchMeUp</title>
+</head>
+<body id="body">
+
+    <!-- header -->
+
+
+    <!-- //main body -->
+
+    <div id="product-window1">
+        <div class="product-content">
+            <div class="close-tab" onclick="closeProductWindow()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div id="myCarousel" class="carousel myCarousel" data-ride="carousel">
+                        <div class="carousel-inner" style="width: 350px; height: 550px;">
+                            <div class="item active" id="pic1">
+                                <img src="/public/assets/black-slim.jfif" alt="">
+                            </div>
+                            <div class="item" id="pic2">
+                                <img src="/public/assets/black-slim2.jfif" alt="">
+                            </div>
+                            <div class="item" id="pic3">
+                                <img src="/public/assets/black-slim3.jfif" alt="">
+                            </div>
+                            <div class="item" id="pic4">
+                                <img src="/public/assets/black-slim4.webp" alt="">
+                            </div>
+                            <div class="item" id="pic5">
+                                <img src="/public/assets/black-slim5.jfif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-8" style="width: 850px;">
+                    <div style="margin-top: 60px;">
+                        <h1>Black Suit</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloribus, distinctio cum ad aspernatur eos ex facilis, dolores quas quidem nam laudantium nemo nostrum hic maxime inventore beatae laboriosam quaerat?</p>
+                    </div>
+                    <div class="price">
+                        <h2>₱30,000.00</h2>
+                    </div><br>
+                    <div class="stock-available">
+                        <p>Stock available:</p><p>27 pcs</p>
+                    </div>
+                    <div class="size-quantity">
+                        <div>
+                            <h4 style="color: #636366;">Sizes:</h4>
+                            <div class="sizes">
+                                <button class="size-button" onclick="sizeBtn(this)">S</button>
+                                <button class="size-button" onclick="sizeBtn(this)">M</button>
+                                <button class="size-button" onclick="sizeBtn(this)">L</button>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 style="color: #636366;">Quantity:</h4>
+                            <div class="quantity">
+                                <input type="number">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <h4 style="color: #636366;">View:</h4>
+                    <div class="mini-pic">
+                        <img src="/public/assets/black-slim.jfif" alt="" data-index="0">
+                        <img src="/public/assets/black-slim2.jfif" alt="" data-index="1">
+                        <img src="/public/assets/black-slim3.jfif" alt="" data-index="2">
+                        <img src="/public/assets/black-slim4.webp" alt="" data-index="3">
+                        <img src="/public/assets/black-slim5.jfif" alt="" data-index="4">
+                    </div>
+                    <div class="add-to-cart">
+                        <button>Add to Cart</button>
+                        <button>Buy now!</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="product-window2">
+        <div class="product-content">
+            <div class="close-tab" onclick="closeProductWindow2()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div id="myCarousel1" class="carousel myCarousel" data-ride="carousel">
+                        <div class="carousel-inner" style="width: 350px; height: 550px;">
+                            <div class="item active" id="pic1">
+                                <img src="/public/assets/mens-brown.jfif" alt="">
+                            </div>
+                            <div class="item" id="pic2">
+                                <img src="/public/assets/mens-brown2.jfif" alt="">
+                            </div>
+                            <div class="item" id="pic3">
+                                <img src="/public/assets/mens-brown3.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-8" style="width: 850px;">
+                    <div style="margin-top: 60px;">
+                        <h1>Brown Suit</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloribus, distinctio cum ad aspernatur eos ex facilis, dolores quas quidem nam laudantium nemo nostrum hic maxime inventore beatae laboriosam quaerat?</p>
+                    </div>
+                    <div class="price">
+                        <h2>₱30,000.00</h2>
+                    </div><br>
+                    <div class="stock-available">
+                        <p>Stock available:</p><p>27 pcs</p>
+                    </div>
+                    <div class="size-quantity">
+                        <div>
+                            <h4 style="color: #636366;">Sizes:</h4>
+                            <div class="sizes">
+                                <button class="size-button" onclick="sizeBtn(this)">S</button>
+                                <button class="size-button" onclick="sizeBtn(this)">M</button>
+                                <button class="size-button" onclick="sizeBtn(this)">L</button>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 style="color: #636366;">Quantity:</h4>
+                            <div class="quantity">
+                                <input type="number">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <h4 style="color: #636366;">View:</h4>
+                    <div class="mini-pic">
+                        <img src="/public/assets/mens-brown.jfif" alt="" data-index="0">
+                        <img src="/public/assets/mens-brown2.jfif" alt="" data-index="1">
+                        <img src="/public/assets/mens-brown3.webp" alt="" data-index="2">
+                    </div>
+                    <div class="add-to-cart">
+                        <button>Add to Cart</button>
+                        <button>Buy now!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-window3">
+        <div class="product-content">
+            <div class="close-tab" onclick="closeProductWindow3()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div id="myCarousel2" class="carousel myCarousel" data-ride="carousel">
+                        <div class="carousel-inner" style="width: 350px; height: 550px;">
+                            <div class="item active" id="pic1">
+                                <img src="/public/assets/mens-grey.webp" alt="">
+                            </div>
+                            <div class="item" id="pic2">
+                                <img src="/public/assets/mens-grey2.webp" alt="">
+                            </div>
+                            <div class="item" id="pic3">
+                                <img src="/public/assets/mens-grey3.webp" alt="">
+                            </div>
+                            <div class="item" id="pic3">
+                                <img src="/public/assets/mens-grey4.webp" alt="">
+                            </div>
+                            <div class="item" id="pic3">
+                                <img src="/public/assets/mens-grey5.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-8" style="width: 850px;">
+                    <div style="margin-top: 60px;">
+                        <h1>Gray Suit</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloribus, distinctio cum ad aspernatur eos ex facilis, dolores quas quidem nam laudantium nemo nostrum hic maxime inventore beatae laboriosam quaerat?</p>
+                    </div>
+                    <div class="price">
+                        <h2>₱30,000.00</h2>
+                    </div><br>
+                    <div class="stock-available">
+                        <p>Stock available:</p><p>27 pcs</p>
+                    </div>
+                    <div class="size-quantity">
+                        <div>
+                            <h4 style="color: #636366;">Sizes:</h4>
+                            <div class="sizes">
+                                <button class="size-button" onclick="sizeBtn(this)">S</button>
+                                <button class="size-button" onclick="sizeBtn(this)">M</button>
+                                <button class="size-button" onclick="sizeBtn(this)">L</button>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 style="color: #636366;">Quantity:</h4>
+                            <div class="quantity">
+                                <input type="number">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <h4 style="color: #636366;">View:</h4>
+                    <div class="mini-pic">
+                        <img src="/public/assets/mens-grey.webp" alt="" data-index="0">
+                        <img src="/public/assets/mens-grey2.webp" alt="" data-index="1">
+                        <img src="/public/assets/mens-grey3.webp" alt="" data-index="2">
+                        <img src="/public/assets/mens-grey4.webp" alt="" data-index="3">
+                        <img src="/public/assets/mens-grey5.webp" alt="" data-index="4">
+                    </div>
+                    <div class="add-to-cart">
+                        <button>Add to Cart</button>
+                        <button>Buy now!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-window4">
+        <div class="product-content">
+            <div class="close-tab" onclick="closeProductWindow4()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div id="myCarousel3" class="carousel myCarousel" data-ride="carousel">
+                        <div class="carousel-inner" style="width: 350px; height: 550px;">
+                            <div class="item active" id="pic1">
+                                <img src="/public/assets/mens-navy.webp" alt="">
+                            </div>
+                            <div class="item" id="pic2">
+                                <img src="/public/assets/mens-navy2.jfif" alt="">
+                            </div>
+                            <div class="item" id="pic3">
+                                <img src="/public/assets/mens-navy3.jfif" alt="">
+                            </div>
+                            <div class="item" id="pic3">
+                                <img src="/public/assets/mens-navy6.webp" alt="">
+                            </div>
+                            <div class="item" id="pic3">
+                                <img src="/public/assets/mens-navy7.jfif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-8" style="width: 850px;">
+                    <div style="margin-top: 60px;">
+                        <h1>Navy Blue Suit</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloribus, distinctio cum ad aspernatur eos ex facilis, dolores quas quidem nam laudantium nemo nostrum hic maxime inventore beatae laboriosam quaerat?</p>
+                    </div>
+                    <div class="price">
+                        <h2>₱30,000.00</h2>
+                    </div><br>
+                    <div class="stock-available">
+                        <p>Stock available:</p><p>27 pcs</p>
+                    </div>
+                    <div class="size-quantity">
+                        <div>
+                            <h4 style="color: #636366;">Sizes:</h4>
+                            <div class="sizes">
+                                <button class="size-button" onclick="sizeBtn(this)">S</button>
+                                <button class="size-button" onclick="sizeBtn(this)">M</button>
+                                <button class="size-button" onclick="sizeBtn(this)">L</button>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 style="color: #636366;">Quantity:</h4>
+                            <div class="quantity">
+                                <input type="number">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <h4 style="color: #636366;">View:</h4>
+                    <div class="mini-pic">
+                        <img src="/public/assets/mens-navy.webp" alt="" data-index="0">
+                        <img src="/public/assets/mens-navy2.jfif" alt="" data-index="1">
+                        <img src="/public/assets/mens-navy3.jfif" alt="" data-index="2">
+                        <img src="/public/assets/mens-navy6.webp" alt="" data-index="3">
+                        <img src="/public/assets/mens-navy7.jfif" alt="" data-index="4">
+                    </div>
+                    <div class="add-to-cart">
+                        <button>Add to Cart</button>
+                        <button>Buy now!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container product-box">
+        <h2>Products</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil obcaecati praesentium consequatur ipsum aperiam fugiat dicta tenetur necessitatibus! Placeat autem saepe, nemo quo quasi natus sint eaque sit ea vitae.</p> 
+        
+        <div class="container">
+            <span class="border black" onclick="openProductWindow()">
+                <div>
+                    <img src="/public/assets/black-slim.jfif" alt="">
+                </div>
+                <h1>Black Suit</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae consectetur voluptate mollitia maiores soluta neque itaque illum, voluptatum distinctio ab, aliquam corporis non laudantium quaerat officia illo similique ducimus!</p>
+            </span>
+            <span class="border border-0" onclick="openProductWindow2()">
+                <div>
+                    <img src="/public/assets/mens-brown.jfif" alt="">
+                </div>
+                <h1>Brown Suit</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae consectetur voluptate mollitia maiores soluta neque itaque illum, voluptatum distinctio ab, aliquam corporis non laudantium quaerat officia illo similique ducimus!</p>
+            </span>
+            <span class="border border-top-0" onclick="openProductWindow3()">
+                <div>
+                    <img src="/public/assets/mens-grey.webp" alt="">
+                </div>
+                <h1>Gray Suit</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae consectetur voluptate mollitia maiores soluta neque itaque illum, voluptatum distinctio ab, aliquam corporis non laudantium quaerat officia illo similique ducimus!</p>
+            </span>
+            <span class="border border-end-0" onclick="openProductWindow4()">
+                <div>
+                    <img src="/public/assets/mens-navy.webp" alt="">
+                </div>
+                <h1>Navy Blue Suit</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae consectetur voluptate mollitia maiores soluta neque itaque illum, voluptatum distinctio ab, aliquam corporis non laudantium quaerat officia illo similique ducimus!</p>
+            </span>
+            <!-- <span class="border border-bottom-0">
+                <div>
+
+                </div>
+            </span> -->
+        </div>
+        <!-- <span class="border border-start-0">6</span>
+        <br>
+        
+        <span class="border-top">7</span>
+        <span class="border-end">8</span>
+        <span class="border-bottom">9</span>
+        <span class="border-start">0</span> -->
+    </div>
+    <div class="customize">
+        <h1>Customization</h1>
+        <p>Create a personalized and unique style statement with our tailored-to-fit clothing services, designed to bring your vision to life and elevate your fashion game to the next level.</p>
+        <h2>Book an appointment now!</h2>
+        <div class="cust-btn">
+            <button>Click Here!
+                <div class="star-1">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+                </div>
+                <div class="star-2">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+                </div>
+                <div class="star-3">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+                </div>
+                <div class="star-4">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+                </div>
+                <div class="star-5">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+                </div>
+                <div class="star-6">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
+                </div>
+            </button>
+        </div>
+        <br>
+    </div>
+    <footer>footer :)</footer>
+    <script src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>
