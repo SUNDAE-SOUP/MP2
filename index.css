@@ -58,7 +58,6 @@ body {
         padding-top: 0;
     }
     #mmu_name {
-        font-family: 'merriweather','bold';
         padding-left: 8%;
         padding-top: 15%;
         color: #ffff;
@@ -73,3 +72,24 @@ body {
         background-color: #32612D;
 }
 }
+
+
+@media only screen and (min-width: 1000px) {
+    #land_img {
+        width: 42%;
+        margin-right: 8%;
+    }
+    #landing {
+        height: 422px;
+    }
+    #mmu_name {
+        padding-left: 12%;
+        padding-top: 10%;
+        font-size: 40px;
+    }
+    #shop {
+        margin-left: 15%;
+        margin-top: 2%;
+    }
+}
+
