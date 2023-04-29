@@ -91,5 +91,8 @@ body {
         margin-left: 15%;
         margin-top: 2%;
     }
+    header {
+        margin-top: 15px;
+    }
 }
 
