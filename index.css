@@ -28,12 +28,41 @@ body {
 }
 
 #mmu_name {
-    font-size: 36px;
+    /* font-size: 36px;
     font-family: 'merriweather','bold';
     padding-left: 25%;
     padding-top: 10%;
-    color: #ffff;
+    color: #ffff; */
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 30px;
+    padding: 20px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
 }
+
+#mmu_name {
+    color: #e0dfdc;
+    letter-spacing: .1em;
+    text-shadow: 
+      0 -1px 0 #fff, 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 8px 0 #202020, 
+      0 9px 0 #1e1e1e, 
+      0 10px 0 #1c1c1c, 
+      0 11px 0 #1a1a1a, 
+      0 12px 0 #181818, 
+      0 13px 0 #161616, 
+      0 14px 0 #141414, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9);
+  }
 
 #shop {
     border: 5px rounded #f4f1ed;
@@ -47,30 +76,54 @@ body {
     color: #32612D;
 }
 
+/*about us*/
+#about {
+    background-color: #988F64;
+    padding-top: 10px;
+    width: 100%;
+    margin: 0;
+}
+#about h6 {
+    text-align: center;
+    font-size: larger;
+}
+#about p {
+    text-align: center;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    padding: 3px;
+
+}
+
+
 @media only screen and (min-width: 768px) {
     #land_img {
-        width: 66%;
+        width: 50%;
         float: right;
     }
     #landing {
         background-color: #32612D;
-        height: 420px;
+        height: 317px;
         padding-top: 0;
     }
     #mmu_name {
-        padding-left: 8%;
-        padding-top: 15%;
-        color: #ffff;
-        float: left;
-        font-size: 38px;
+        padding-top: 10%;
+        font-size: 36px;
     }
     #shop {
-        margin-left: 13%;
-        margin-top: 3%;
+        margin-left: 20%;
+        margin-top: 1%;
     }
     #shop {
         background-color: #32612D;
-}
+    }
+    #about p {
+        text-align: left;
+        padding-left: 50px;
+    }
 }
 
 
@@ -80,19 +133,26 @@ body {
         margin-right: 8%;
     }
     #landing {
-        height: 422px;
+        height: 420px;
     }
     #mmu_name {
-        padding-left: 12%;
+        padding-left: 10%;
         padding-top: 10%;
-        font-size: 40px;
+        font-size: 45px;
     }
     #shop {
-        margin-left: 15%;
+        margin-left: 25%;
         margin-top: 2%;
     }
     header {
         margin-top: 15px;
+    }
+    #about p {
+        text-align: left;
+        padding-left: 70px;
+    }
+    #about {
+        justify-content: center;
     }
 }
 

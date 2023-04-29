@@ -13,43 +13,45 @@
     <link rel="stylesheet" href="index.css">       
     <body>
         <header>
-            <a href="" class="navbar-brand" id="logo" style="padding-left: 20px;font-family: Roca one;">MMU
-                <!-- <img src="\MP2\index_asset\mmulogo\image.png" alt="MMU Logo" id="logo" > -->
-            </a>
-        
-            <nav class="navbar navbar-expand-sm fixed-top justify-content-end" style="color: #354a21">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar"> 
-                        <div class="justify-content-end">
-                            <i class="fa fa-search"></i>
-                            <i class="fa fa-shopping-cart"></i>
-                            <i class="material-icons">place</i>
-        
-                        </div>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="#myHome" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#aboutUs" class="nav-link">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#myProduct" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Products</a>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="#">Suits</a></li>
-                                    <li><a class="dropdown-item" href="#">Pants</a></li>
-                                    <li><a class="dropdown-item" href="#" style="color: red;">Sales</a></li>
+            <div class="info-bar">
+                <div class="header-message uppercase">
+                    Deliver : 3-5 days for Metro Manila and 7-10 business days for provincial area.
+                </div>
+                <div class="wrapper">
+                    <ul >
+                        <i class="fa fa-search"></i>
+                        <i class="fa fa-shopping-cart"></i>
+                        <i class="material-icons">place</i>
+                    </ul>
+                    <a href="" class="navbar-brand" id="logo" style="padding-left: 20px;font-family: Roca one;">MMU
+                        <!-- <img src="\MP2\index_asset\mmulogo\image.png" alt="MMU Logo" id="logo" > -->
+                    </a>
+                    <nav class="navbar navbar-expand-sm justify-content-end" style="color: #354a21">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar"> 
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                         <a href="#myHome" class="nav-link">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#aboutUs" class="nav-link">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#myProduct" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Products</a>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li><a class="dropdown-item" href="#">Suits</a></li>
+                                            <li><a class="dropdown-item" href="#">Pants</a></li>
+                                            <li><a class="dropdown-item" href="#" style="color: red;">Sales</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <br>
-                    
-                </div> 
-            </nav>
+                            </div>
+                        </div> 
+                    </nav>
+                </div>
         </header>
         <!--Section 1 Home-->
         <section id="myHome">
@@ -73,17 +75,19 @@
         </section>
         <!--Section 3 About-->
         <section>
-            <div id="about">
-                <h6>About Us</h6>
+            <div class="row" id="about">
+                <div class="col-lg-3 col-md-4" id="MVO">
+                    <h6>About Us</h6>
                     <p>Mission</p>
                     <p>Vision</p>
                     <p>Our Values</p>
-            </div>
-            <div>
-                <h6>Address</h6>
-            </div>
-            <div>
-                <h6>Contact Us</h6>
+                </div>
+                <div class="col-lg-3 col-md-4" id="address">
+                    <h6>Address</h6>
+                </div>
+                <div class="col-lg-3 col-md-4" id="contact">
+                    <h6>Contact Us</h6>
+                </div>
             </div>
         </section>
 
@@ -91,9 +95,9 @@
         <footer>
             <h6>Official Website</h6>
             <p>matchmeup.com.ph</p>
-            <i class="fa fa-facebook-square" style="font-size:36px;"></i>
-            <i class="fa fa-instagram" style="font-size:36px;"></i>
-            <i class="fa fa-twitter" style="font-size:36px;"></i>
+            <i class="fa fa-facebook-square" style="font-size:24px;"></i>
+            <i class="fa fa-instagram" style="font-size:24px;"></i>
+            <i class="fa fa-twitter" style="font-size:24px;"></i>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
