@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="index.css">       
     <body>
         <header>
@@ -18,37 +19,39 @@
                     Deliver : 3-5 days for Metro Manila and 7-10 business days for provincial area.
                 </div>
                 <div id="head_cart">
-                    <ul >
-                        <i class="fa fa-search"></i>
-                        <i class="fa fa-shopping-cart"></i>
-                        <i class="material-icons">place</i>
-                        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-                    </ul>
-                    <a href="" class="navbar-brand" id="logo" style="font-family: Roca one;">MMU
-                        <!-- <img src="\MP2\index_asset\mmulogo\image.png" alt="MMU Logo" id="logo" > -->
+                    <a href="" class="navbar-brand">
+                        <img src="public/assets/New_logo.png" alt="MMU Logo" id="logo"><h1 id="mmu_name">Match Me Up</h1>
                     </a>
-                    <nav class="navbar navbar-expand-sm justify-content-end" style="color: #354a21">
-                        <div class="container-fluid">
+                    <nav class="navbar navbar-expand-sm" style="color: #242523">
+                        <div class="container-fluid" id="navbar">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar"> 
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                         <a href="#myHome" class="nav-link">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#aboutUs" class="nav-link">About Us</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#myProduct" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Products</a>
-                                        <ul class="dropdown-menu dropdown-menu-end">
-                                            <li><a class="dropdown-item" href="#">Suits</a></li>
-                                            <li><a class="dropdown-item" href="#">Pants</a></li>
-                                            <li><a class="dropdown-item" href="#" style="color: red;">Sales</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                                <div class="wrapper">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a href="#myHome" class="nav-link">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#aboutUs" class="nav-link">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#myProduct" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Products</a>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">Suits</a></li>
+                                                <li><a class="dropdown-item" href="#">Pants</a></li>
+                                                <li><a class="dropdown-item" href="#" style="color: red;">Sales</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul >
+                                        <button type="button" class="btn"><i class="fa fa-search"></i></button>
+                                        <button type="button" class="btn"><i class="fa fa-shopping-cart"></i></i></button>
+                                        <button type="button" class="btn"><i class="bi bi-geo-alt-fill"></i></button>
+                                        <button type="button" class="btn"><i class="bi bi-person-circle"></i></button>
+                                    </ul>
+                                </div>
                             </div>
                         </div> 
                     </nav>
@@ -60,18 +63,20 @@
                 <div>
                     <img src="public\assets\MP2_Landing.jpg" alt="landing" id="land_img">
                 </div>
-                <div id="units">
-                    <h1 id="mmu_name">Match Me Up</h1>
-                </div>
+                <h1>
+                    <span>Dress to impress with our tailored suits, designed to elevate your style.</span>
+                </h1>
                 <button id="shop">Shop Now!</button>
 
-
+            </div>
         </section>
         <!--Section 2 Sale and Promo-->
         <section>
             <div id="sale_promo">
-                <h1>Sales and Promotions</h1>
-                <img src="public/assets/suits man 8.png" alt="sale" id="sale_img">
+                <img src="public/assets/suits woman 8.jpg" alt="sale" id="sale_img3" style="width: 355px;">
+                <img src="public/assets/suits man 10.jpg" alt="sale" id="sale_img1">
+                <img src="public/assets/suits man 11.jpg" alt="sale" id="sale_img2">
+                <img src="public/assets/suits man 12.jpg" alt="sale" id="sale_img4">
             </div>
         </section>
         <!--Section 3 About-->
@@ -102,5 +107,13 @@
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                </filter>
+            </defs>
+        </svg>
     </body>
 </html>
