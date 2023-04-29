@@ -28,6 +28,30 @@ span {
     width: 100%; */
 }
 
+.cart-labels {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cart-amount {
+    margin-left: 30px;
+}
+
+.item-cart {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    justify-content: space-around;
+}
+
+.item-cart > img {
+    height: fit-content;
+    width: 90%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
 .product-box {
     margin-top: 10rem;
     margin-left: 10rem;
