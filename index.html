@@ -49,7 +49,7 @@
                                         <button type="button" class="btn"><i class="fa fa-search"></i></button>
                                         <button type="button" class="btn"><i class="fa fa-shopping-cart"></i></i></button>
                                         <button type="button" class="btn"><i class="bi bi-geo-alt-fill"></i></button>
-                                        <button type="button" class="btn"><i class="bi bi-person-circle"></i></button>
+                                        <button type="button" class="btn" onclick="openForm()"><i class="bi bi-person-circle"></i></button>
                                     </ul>
                                 </div>
                             </div>
@@ -57,6 +57,43 @@
                     </nav>
                 </div>
         </header>
+        <!--Log in & Sign up-->
+        <div class="form-popup" id="login">
+            <form action="/action_page.php" class="form-container">
+                <h1>Login</h1>
+                
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                <button type="submit" class="btn" style="background-color: green;">Login</button>
+                <button type="submit" class="btn" onclick="signupForm()" style="background-color: blue;">Sign up</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <div class="form-popup" id="signup">
+            <form action="/action_page.php" class="form-container">
+                <h1>Sign Up</h1>
+                
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="email"><b>User Name</b></label>
+                <input type="text" placeholder="name" name="name" required>
+                
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <button type="submit" class="btn" style="background-color: blue;">Sign up</button>
+                <button type="button" class="btn cancel" onclick="cancelForm()">Cancel</button>
+            </form>
+        </div>
+
+
         <!--Section 1 Home-->
         <section id="myHome">
             <div id="landing">
@@ -64,7 +101,7 @@
                     <img src="public\assets\MP2_Landing.jpg" alt="landing" id="land_img">
                 </div>
                 <h1>
-                    <span>Dress to impress with our tailored suits, designed to elevate your style.</span>
+                    <span>Dress to impress with our tailored suits, <br>designed to elevate your style.</span>
                 </h1>
                 <button id="shop">Shop Now!</button>
 
@@ -82,7 +119,7 @@
         <!--Section 3 About-->
         <section>
             <div class="row" id="about">
-                <div class="col-lg-3 col-md-4" id="MVO">
+                <div class="col-lg-3 col-md-4" id="aboutUs">
                     <h6>About Us</h6>
                     <p>Mission</p>
                     <p>Vision</p>
@@ -115,5 +152,32 @@
                 </filter>
             </defs>
         </svg>
+        <script>
+            function openForm() {
+              document.getElementById("login").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("login").style.display = "none";
+            }
+
+            // Get the modal
+            function signupForm() {
+                document.getElementById("signup").style.display = "block";
+                document.getElementById("login").style.display = "none";  
+            }
+            
+            function cancelForm() {
+              document.getElementById("signup").style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+
+        </script>
     </body>
 </html>
