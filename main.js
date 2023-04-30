@@ -115,3 +115,6 @@ function closeProductWindow4() {
     product_window4.style.display = "none";
 }
 
+function sizeBtn(button) {
+    var size = button.innerHTML
+}
