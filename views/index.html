@@ -1,0 +1,184 @@
+<!DOCTYPE>
+<html>
+	<head>
+        <meta charset="utf-8">
+		<title>Match ME Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/public/index.css">       
+    <body>
+        <header>
+            <div class="info-bar">
+                <div class="header-message uppercase" id="deliver">
+                    Deliver : 3-5 days for Metro Manila and 7-10 business days for provincial area.
+                </div>
+                <div id="head_cart">
+                    <a href="" class="navbar-brand">
+                        <img src="public/assets/New_logo.png" alt="MMU Logo" id="logo"><h1 id="mmu_name">Match Me Up</h1>
+                    </a>
+                    <nav class="navbar navbar-expand-sm" style="color: #242523">
+                        <div class="container-fluid" id="navbar">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                                <div class="wrapper">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a href="#myHome" class="nav-link">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#aboutUs" class="nav-link">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#myProduct" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Products</a>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="/views/product.html">Suits</a></li>
+                                                <li><a class="dropdown-item" href="#">Pants</a></li>
+                                                <li><a class="dropdown-item" href="#" style="color: red;">Sales</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul >
+                                        <button type="button" class="btn"><i class="fa fa-search"></i></button>
+                                        <button type="button" class="btn"><i class="fa fa-shopping-cart"></i></i></button>
+                                        <button type="button" class="btn"><i class="bi bi-geo-alt-fill"></i></button>
+                                        <button type="button" class="btn" onclick="openForm()"><i class="bi bi-person-circle"></i></button>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </nav>
+                </div>
+        </header>
+        <!--Log in & Sign up-->
+        <div class="form-popup" id="login">
+            <form action="/action_page.php" class="form-container">
+                <h1>Login</h1>
+                
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                <button type="submit" class="btn" style="background-color: green;">Login</button>
+                <button type="submit" class="btn" onclick="signupForm()" style="background-color: blue;">Sign up</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <div class="form-popup" id="signup">
+            <form action="/action_page.php" class="form-container">
+                <h1>Sign Up</h1>
+                
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Full name" name="name" required>
+                
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <button type="submit" class="btn" style="background-color: blue;">Sign up</button>
+                <button type="button" class="btn cancel" onclick="cancelForm()">Cancel</button>
+            </form>
+        </div>
+
+
+        <!--Section 1 Home-->
+        <section id="myHome">
+            <div id="landing">
+                <div>
+                    <img src="/public/assets/MP2_Landing.jpg" alt="landing" id="land_img">
+                </div>
+                <h1>
+                    <span>Dress to impress with our tailored suits, <br>designed to elevate your style.</span>
+                </h1>
+                <a href="/views/product.html"><button id="shop">Shop Now!</button></a>
+
+            </div>
+        </section>
+        <!--Section 2 Sale and Promo-->
+        <section>
+            <div id="sale_promo">
+                <img src="/public/assets/suits woman 8.jpg" alt="sale" id="sale_img3" style="width: 355px;">
+                <img src="/public/assets/suits man 10.jpg" alt="sale" id="sale_img1">
+                <img src="/public/assets/suits man 11.jpg" alt="sale" id="sale_img2">
+                <img src="/public/assets/suits man 12.jpg" alt="sale" id="sale_img4">
+            </div>
+        </section>
+        <!--Section 3 About-->
+        <section>
+            <div class="row" id="about">
+                <div class="col-lg-3 col-md-4" id="aboutUs">
+                    <h6>About Us</h6>
+                    <p>Mission</p>
+                    <p>Vision</p>
+                    <p>Our Values</p>
+                </div>
+                <div class="col-lg-3 col-md-4" id="address">
+                    <h6>Address</h6>
+                </div>
+                <div class="col-lg-3 col-md-4" id="contact">
+                    <h6>Contact Us</h6>
+                </div>
+            </div>
+        </section>
+
+        <!--Section 4 Footer-->
+        <footer>
+            <h6>Official Website</h6>
+            <p>matchmeup.com.ph</p>
+            <i class="fa fa-facebook-square" style="font-size:24px;"></i>
+            <i class="fa fa-instagram" style="font-size:24px;"></i>
+            <i class="fa fa-twitter" style="font-size:24px;"></i>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                </filter>
+            </defs>
+        </svg>
+        <script>
+            function openForm() {
+              document.getElementById("login").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("login").style.display = "none";
+            }
+
+            // Get the modal
+            function signupForm() {
+                document.getElementById("signup").style.display = "block";
+                document.getElementById("login").style.display = "none";  
+            }
+            
+            function cancelForm() {
+              document.getElementById("signup").style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+
+        </script>
+        <script src="/main.js"></script>
+    </body>
+</html>

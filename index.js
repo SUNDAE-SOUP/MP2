@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const ejs = require('html');
+const conso = require('consolidate');
 
 //templating engine
 
+app.engine('html', conso.swig);
 app.set('view engine', 'html');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -18,7 +19,7 @@ app.use(express.urlencoded({extended: true}));
 
 
 
-/* app.use('/', require('./route')); */
+app.use('/', require('./route'));
 
 
 
