@@ -10,6 +10,18 @@
     z-index: 1;
     width: 100%;
 }
+.navbar-brand {
+    height: fit-content;
+    top: 0;
+}
+
+.navbar-brand > img {
+    top: 0;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
 
 span {
     display: inline-block;
