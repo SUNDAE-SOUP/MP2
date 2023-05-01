@@ -32,12 +32,40 @@ app.use(sessions({
 }));
 
 router.get('/home', (req, res) => {
-    res.render('index')
+    res.render('home')
+    
 });
 
 router.get('/product', (req, res) => {
-    res.render('product')
-})
+    res.render('product');
+    
+
+});
+
+router.post('/home', urlencodedParser, (req, res) => {
+    const email = req.body.emailsignup;
+    const username = req.body.namesignup;
+    const password = req.body.passwordsignup;
+    const role_name = 'user';
+
+    let encryptedPassword = bcrypt.hashSync(password, salt)
+
+    const user = {'email': email, 'username': username, 'password': encryptedPassword, 'role_name': role_name};
+    const sql = "INSERT INTO users SET ?";
+    db.query(sql, user, (err, result) => {
+        if (err) {
+        console.error(err);
+        res.status(500).send("Error inserting user into database");
+        } 
+        else {
+            res.render('loggedIn_home', {
+                'username': username,
+            })     
+        }
+    });
+});
+
+
 
 
 module.exports = router;

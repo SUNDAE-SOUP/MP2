@@ -7,13 +7,14 @@ function sizeBtn(button) {
         button.classList.remove("clicked");
     } else {
         // If it doesn't, remove the "clicked" class from all buttons
-        for (var i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove("clicked");
+        for (var z = 0; z < buttons.length; z++) {
+        buttons[z].classList.remove("clicked");
         }
         // Add the "clicked" class to the button that was just clicked
         button.classList.add("clicked");
     }
 }
+
 
 // Get a reference to the carousel and the mini-pic images
 var carousel = document.getElementById("myCarousel");
@@ -115,6 +116,67 @@ function closeProductWindow4() {
     product_window4.style.display = "none";
 }
 
-function sizeBtn(button) {
-    var size = button.innerHTML
+
+
+
+
+
+
+
+//sign up window
+/* var email = document.getElementById("email");
+var nameSu = document.getElementById("name");
+var pWord = document.getElementById("pWord");
+var submitSignup = document.getElementById("submitSignup");
+
+
+function validateSignUp() {
+    var emailValue = email.value;
+    var nameValue = nameSu.value;
+    var passWord = pWord.value;
+
+    if (emailValue ==="") {
+        return;
+    }
+
+    if (nameValue === "") {
+        return;
+    }
+
+    if(passWord === "") {
+        return;
+    }
 }
+
+submitSignup.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    
+
+    if (validateSignUp()) {
+
+        const payLoad = {
+            "email": email.value,
+            "name": nameSu.value,
+            "password": pWord.value
+        }
+        fetch("http://localhost:3000/signUp", {
+            method: "POST",
+            headers: {
+                'Accept': "applocation/json",
+                'Content-Type': "application/json"
+            },
+
+            body: JSON.stringify(payLoad),
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+        })
+    } else {
+        return
+    }
+
+    
+
+}) */

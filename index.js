@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const conso = require('consolidate');
+const ejs = require('ejs');
+
+
 
 //templating engine
 
-app.engine('html', conso.swig);
-app.set('view engine', 'html');
+app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use('/static', express.static(path.join(__dirname, 'public')));
