@@ -39,7 +39,7 @@ body {
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
+  max-width: 250px;
   padding: 10px;
   background-color: white;
 }
@@ -100,7 +100,7 @@ body {
 
 #landing h1 { color: #ffff;
     font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 20px; 
+    font-size: 15px; 
     font-weight: bold; 
     line-height: 20px; 
     letter-spacing: 3px; 
@@ -121,7 +121,7 @@ body {
 }
 
 #shop {
-    border: 5px rounded #f4f1ed;
+    border: 5px rounded #1e2b13;
     margin-left: 35%;
     margin-top: 20px;
     border-radius: 5px;
@@ -129,9 +129,40 @@ body {
     background-color: #354A21;
 }
 #shop:hover {
-    background-color: #f4f1ed;
-    color: #32612D;
+    background-color: #1e2b13;
+    color: #ffff;
 }
+#sale_promo {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+#sale_img3 img{
+    width: 200px;
+}
+#sale_img1 img{
+    width: 154px;
+}
+#sale_img2 img{
+    width: 175px;
+}
+#sale_img4 img{
+    width: 177px;
+}
+#sale_img3 {
+    width: 200px;
+}
+#sale_img1 {
+    width: 154px;
+}
+#sale_img2 {
+    width: 175px;
+}
+#sale_img4 {
+    width: 177px;
+}
+
 
 /*about us*/
 #about {
@@ -147,6 +178,30 @@ body {
 #about p {
     text-align: center;
 }
+
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 6px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+input[type=checkbox] {
+    margin-top: 8px;
+}
+  
+input[type=submit] {
+    background-color: #728C69;
+    color: white;
+    border: none;
+}
+  
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
 
 /*footer*/
 footer {
@@ -230,6 +285,10 @@ footer {
         text-align: left;
         padding-left: 50px;
     }
+    #sale_promo {
+        justify-content: center;
+        padding-left: 0;
+    }
 }
 
 
@@ -237,9 +296,11 @@ footer {
     #land_img {
         width: 41%;
         margin-right: 8%;
+        padding-top: 0;
     }
     #landing {
-        height: 420px;
+        height: 410px;
+        margin-top: 10px;
     }
     #logo {
         width: 7%;
@@ -262,7 +323,37 @@ footer {
         margin-left: 21%;
         margin-top: 2%;
     }
+    /* #sale_promo {
+        padding-top: 5px;
+        padding-left: 5px;
+    } */
 
+    #sale_img3 img{
+        width: 359px;
+    }
+    #sale_img1 img{
+        width: 277px;
+    }
+    #sale_img2 img{
+        width: 324px;
+    }
+    #sale_img4 img{
+        width: 329px;
+    }
+    #sale_img3 {
+        width: 359px;
+    }
+    #sale_img1 {
+        width: 277px;
+    }
+    #sale_img2 {
+        width: 324px;
+    }
+    #sale_img4 {
+        width: 329px;
+    }
+   
+    
     #about p {
         text-align: left;
         padding-left: 70px;
