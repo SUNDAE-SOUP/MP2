@@ -1,0 +1,51 @@
+<%- include('landing_header') -%>
+
+<header>
+    <div class="info-bar">
+        <div id="head_cart">
+            <a href="" class="navbar-brand">
+                <img src="/assets/New_logo.png" alt="MMU Logo" id="logo"><h1 id="mmu_name">Match Me Up</h1>
+            </a>
+            <nav class="navbar navbar-expand-sm" style="color: #242523">
+                <div class="container-fluid" id="navbar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                        <div class="wrapper">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#myHome" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#aboutUs" class="nav-link">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#myProduct" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Products</a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="/product">Suits</a></li>
+                                        <li><a class="dropdown-item" href="#">Pants</a></li>
+                                        <li><a class="dropdown-item" href="#" style="color: red;">Sales</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul >
+                                <button type="button" class="btn"><i class="fa fa-search"></i></button>
+                                <button type="button" class="btn"><i class="fa fa-shopping-cart"></i></i></button>
+                                <button type="button" class="btn"><i class="bi bi-geo-alt-fill"></i></button>
+                                <button type="button" class="btn" onclick="openForm()"><i class="bi bi-person-circle"></i></button>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </nav>
+        </div>
+</header>
+
+
+
+
+
+
+
+<%- include('landing_footer') -%>
