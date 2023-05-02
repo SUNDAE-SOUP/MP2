@@ -53,6 +53,10 @@ router.get('/loggedIn_product', (req, res) => {
     res.render('loggedIn_product', {
         'username': req.app.get('username'),
     })
+});
+
+router.get('/dashboard', (req, res) => {
+    res.render('dashboard');
 })
 
 router.post('/home', urlencodedParser, (req, res) => {
