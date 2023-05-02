@@ -31,18 +31,15 @@
                                         <li><a class="dropdown-item" href="#" style="color: red;">Sales</a></li>
                                     </ul>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link" style="color: #1d1d1f;">Welcome<span style="color: #1d1d1f"> <%-username%> !</span></a>
+                                </li>
                             </ul>
-                            <ul >
+                            <ul class="icon-btn">
                                 <button type="button" class="btn"><i class="fa fa-search"></i></button>
                                 <button type="button" class="btn"><i class="fa fa-shopping-cart"></i></i></button>
                                 <button type="button" class="btn"><i class="bi bi-geo-alt-fill"></i></button>
-                                <div class="dropdown">
-                                    <button type="button" class="btn dropdown-toggle"><i class="">Welcome <span> <%-username%> !</span></i></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Log out :(</a></li>
-                                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                                    </ul>
-                                </div>
+                                <button type="button" class="btn"><a href="/home" style="color:#1d1d1f"><i class="bi bi-box-arrow-right"></i></a></button>
                             </ul>
                         </div>
                     </div>
@@ -50,41 +47,6 @@
             </nav>
         </div>
 </header>
-<!--Log in & Sign up-->
-<div class="form-popup" id="login">
-    <form class="form-container">
-        <h1>Login</h1>
-        
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
-        
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required>
-        
-        <button type="submit" class="btn" style="background-color: green;">Login</button>
-        <button type="submit" class="btn" onclick="signupForm()" style="background-color: blue;">Sign up</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-    </form>
-</div>
-<div class="form-popup" id="signup">
-    <form class="form-container" action="/home" method="POST">
-        <h1>Sign Up</h1>
-        
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="emailsignup" required>
-
-        <label for="name"><b>Name</b></label>
-        <input type="text" placeholder="Full name" name="namesignup" required>
-        
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="passwordsignup" required>
-        
-        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-        <button type="submit" class="btn" id="submitSignup" style="background-color: blue;">Sign up</button>
-        <button type="button" class="btn cancel" onclick="cancelForm()">Cancel</button>
-    </form>
-</div>
 
 
 <!--Section 1 Home-->
@@ -96,7 +58,7 @@
         <h1>
             <span>Dress to impress with our tailored suits, <br>designed to elevate your style.</span>
         </h1>
-        <a href=""><button id="shop">Shop Now!</button></a>
+        <a href="/loggedIn_product"><button id="shop">Shop Now!</button></a>
 
     </div>
 </section>

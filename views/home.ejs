@@ -46,14 +46,14 @@
 </header>
 <!--Log in & Sign up-->
 <div class="form-popup" id="login">
-    <form class="form-container">
+    <form class="form-container" action="/authenticate" method="POST">
         <h1>Login</h1>
         
         <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
+        <input type="text" placeholder="Enter Email" name="emailLogin" required>
         
         <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required>
+        <input type="password" placeholder="Enter Password" name="passwordLogin" required>
         
         <button type="submit" class="btn" style="background-color: green;">Login</button>
         <button type="submit" class="btn" onclick="signupForm()" style="background-color: blue;">Sign up</button>
@@ -90,7 +90,7 @@
         <h1>
             <span>Dress to impress with our tailored suits, <br>designed to elevate your style.</span>
         </h1>
-        <a href=""><button id="shop">Shop Now!</button></a>
+        <a href="/product"><button id="shop">Shop Now!</button></a>
 
     </div>
 </section>

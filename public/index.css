@@ -26,6 +26,10 @@ body {
     padding-top: 10px;
 }
 
+.icon-btn {
+    margin-left: 160px;
+}
+
 
 /* The popup form - hidden by default */
 .form-popup {
