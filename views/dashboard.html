@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="/views/dashboard.css">       
     <body>
         <header>
-            <div class="info-bar">
-                <div id="head_cart">
+            <div class="info-bar" style="background-color: #354A21;">
+                <div class="container-fluid">
                     <a href="" class="navbar-brand">
                         <img src="/public/assets/New_logo.png" alt="MMU Logo" id="logo"><h1 id="mmu_name">Match Me Up</h1>
                     </a>
@@ -31,17 +31,15 @@
                                             <a href="#myHome" class="nav-link">Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#aboutUs" class="nav-link">About Us</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#myProduct" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Products</a>
+                                            <a href="#myTransaction" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Transactions</a>
                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                <li><a class="dropdown-item" href="/views/product.html">Suits</a></li>
-                                                <li><a class="dropdown-item" href="#">Pants</a></li>
-                                                <li><a class="dropdown-item" href="#" style="color: red;">Sales</a></li>
+                                                <li><a class="dropdown-item" href="/views/product.html">Sales</a></li>
+                                                <li><a class="dropdown-item" href="#">Appointment</a></li>
+                                                <li><a class="dropdown-item" href="#">Inventory</a></li>
                                             </ul>
                                         </li>
                                     </ul>
+
                                     <ul >
                                         <button type="button" class="btn"><i class="fa fa-search"></i></button>
                                         <button type="button" class="btn" onclick="openForm()"><i class="bi bi-person-circle"></i></button>
@@ -54,19 +52,156 @@
         </header>
         
         <!--Section 1 Home-->
-        <section id="myHome">
-            <div id="landing">
-                <div>
-                    <img src="/public/assets/MP2_Landing.jpg" alt="landing" id="land_img">
+        <section id="myDashboard">
+            <h1>Daily Dashboard</h1>
+            <div class="col-lg-3">
+                <div class="row">
+                    Recent Records:
                 </div>
-                <h1>
-                    <span>Dress to impress with our tailored suits, <br>designed to elevate your style.</span>
-                </h1>
-                <a href="/views/product.html"><button id="shop" style="color: #ffff;">Shop Now!</button></a>
-
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    Sales amount for the day:
+                </div>
+                <div class="row">
+                    Number of Appointment/s for the day:
+                </div>
+                <div class="row">
+                    Announcements:
+                </div>
             </div>
         </section>
-        
+
+
+
+        <!--Transactions-->
+        <section id="myTransactions" class="pt-5">
+            <div id="transaction">
+                <h3>Transactions</h3>
+
+                <!--Nav Bar-->
+                <ul class="nav nav-tabs pt-2" role="tablist">
+                    <il class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#sales">Sales</a>
+                    </il>
+                    <il class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#appointment" id="appoint-btn">Appointments</a>
+                    </il>
+                    <il class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#inventory" id="invent-btn">Inventory</a>
+                    </il>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="sales" class="container tab-pane active">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Transaction Number</th>
+                                <th>Item</th>
+                                <th>Unit Price</th>
+                                <th>Total</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="appointment" class="container tab-pane">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Appoitment ID</th>
+                                <th>Time</th>
+                                <th>Employee ID</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="inventory" class="container tab-pane">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Product ID</th>
+                                <th>Beginning Balance</th>
+                                <th>Sold</th>
+                                <th>On Hand</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <br>
         <!--Section 4 Footer-->
         <footer>
             <h6>Official Website</h6>
