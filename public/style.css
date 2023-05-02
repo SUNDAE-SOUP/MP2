@@ -9,7 +9,10 @@
     top: 0;
     z-index: 1;
     width: 100%;
+
 }
+
+
 .navbar-brand {
     height: fit-content;
     top: 0;
@@ -30,6 +33,10 @@ span {
     margin: 1px;
     margin-left: 1rem;
     margin-top: 50px;
+}
+
+.cart-icon {
+    margin-left: 900px;
 }
 
 #body {
@@ -424,10 +431,9 @@ z-index: 2;
 fill: #FFFDEF
 }
 
-footer {
+/* footer {
     background-color: #b5dcae;
-    height: 400px;
-}
+} */
 
 
 
@@ -436,6 +442,9 @@ footer {
 
 @media (max-width: 500px) {
     
+    .cart-icon {
+        margin-left: 0;
+    }
     .customize {
         margin-top: 2rem;
         background-color: #8ebd89;
