@@ -118,6 +118,13 @@ function closeProductWindow4() {
 
 
 
+const addCartBtns = document.querySelectorAll('.addCartBtn');
+
+addCartBtns.forEach((button) => {
+  button.addEventListener('click', function() {
+    
+  });
+});
 
 
 

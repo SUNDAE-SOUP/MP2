@@ -26,22 +26,13 @@
                 <li class="nav-item" style="margin-top: 8px;">
                     <button type="button" class="btn"><a href="/home" style="color:#1d1d1f"><i class="bi bi-box-arrow-right"></i></a></button>
                 </li>
-                <!-- <li class="nav-item" style="margin-left: 900px;">
-                    <div class="container-fluid mt-3" style="margin-top: 100px;">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                            </svg>
-                        </button>
-                    </div>
-                </li> -->
             </ul>
             <ul class="navbar-nav">
                 <div class="container-fluid mt-3" style="margin-top: 100px;">
                     <button class="btn btn-primary cart-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <a href="/home" style="color: #f5f5f7;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
                             <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                        </svg>
+                        </svg></a>
                     </button>
                 </div>
             </ul>
@@ -69,7 +60,7 @@
             <div class="item-cart">
                 <h4>1X</h4>
                 <img src="/assets/mens-grey.webp" alt="">
-                <h4>Gray Suit: S</h4>
+                <h4>Gray Suit</h4>
                 <h4>30,000.00</h4>
             </div>
             <button class="btn btn-secondary" type="button">Check out</button>
@@ -147,7 +138,7 @@
                     <img src="/assets/black-slim5.jfif" alt="" data-index="4">
                 </div>
                 <div class="add-to-cart">
-                    <button>Add to Cart</button>
+                    <button class="addCartBtn" onclick="closeProductWindow()">Add to Cart</button>
                     <button>Buy now!</button>
                 </div>
             </div>
@@ -216,7 +207,7 @@
                     <img src="/assets/mens-brown3.webp" alt="" data-index="2">
                 </div>
                 <div class="add-to-cart">
-                    <button>Add to Cart</button>
+                    <button class="addCartBtn" onclick="closeProductWindow2()">Add to Cart</button>
                     <button>Buy now!</button>
                 </div>
             </div>
@@ -291,7 +282,7 @@
                     <img src="/assets/mens-grey5.webp" alt="" data-index="4">
                 </div>
                 <div class="add-to-cart">
-                    <button>Add to Cart</button>
+                    <button class="addCartBtn" onclick="closeProductWindow3()">Add to Cart</button>
                     <button>Buy now!</button>
                 </div>
             </div>
@@ -366,7 +357,7 @@
                     <img src="/assets/mens-navy7.jfif" alt="" data-index="4">
                 </div>
                 <div class="add-to-cart">
-                    <button>Add to Cart</button>
+                    <button class="addCartBtn" onclick="closeProductWindow4()">Add to Cart</button>
                     <button>Buy now!</button>
                 </div>
             </div>
