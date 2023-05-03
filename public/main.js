@@ -117,13 +117,85 @@ function closeProductWindow4() {
 }
 
 
-
+var suit_price = document.getElementById('suit-price');
+var product_name = document.getElementById('product-name');
+var active_item_image = document.getElementById('active-item-image');
+var order_quantity = document.getElementById('order_quantity');
+var cart_list = document.getElementById('cart-list');
 const addCartBtns = document.querySelectorAll('.addCartBtn');
 
 addCartBtns.forEach((button) => {
-  button.addEventListener('click', function() {
-    
-  });
+    button.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        var order_quantity_value = order_quantity.value;
+        var imgSource = active_item_image.getAttribute("src");
+        var product_title = product_name.innerText;
+        var cart_price = suit_price.innerText;
+
+        var newItemCart = document.createElement("div");
+        newItemCart.classList.add("item-cart");
+
+        cart_list.appendChild(newItemCart);
+
+        var quantity = document.createElement("h4");
+        quantity.innerHTML = order_quantity_value + 'X';
+
+        newItemCart.appendChild(quantity);
+
+        var cart_image = document.createElement("img")
+        cart_image.src = imgSource;
+
+        newItemCart.appendChild(cart_image);
+
+        var cart_prod_title = document.createElement("h4");
+        cart_prod_title.innerText = product_title;
+        
+        newItemCart.appendChild(cart_prod_title);
+
+        var cart_prod_amount = document.createElement("h4");
+        cart_prod_amount.innerText = cart_price;
+
+        newItemCart.appendChild(cart_prod_amount);
+
+
+        var form_tag = document.createElement("form")
+        form_tag.setAttribute("action", "/check_out");
+        form_tag.setAttribute("method", "POST");
+
+        cart_list.appendChild(form_tag);
+
+        var btn_div = document.createElement("div");
+        btn_div.classList.add("checkOut_Remove");
+
+        form_tag.appendChild(btn_div);
+
+        /* var input_transactionID = document.createElement("input");
+        input_transactionID.setAttribute("type", "hidden");
+        input_transactionID.setAttribute("value", "");
+        input_transactionID.setAttribute("name", "transaction_Id"); */
+
+        var btn_check_out = document.createElement("button");
+        btn_check_out.classList.add("btn", "btn-secondary");
+        btn_check_out.setAttribute("type", "button");
+        btn_check_out.innerHTML = "Check out";
+
+        btn_div.appendChild(btn_check_out);
+
+
+        var btn_remove = document.createElement("button");
+        btn_remove.classList.add("btn", "btn-danger");
+        btn_remove.setAttribute("type", "button");
+        btn_remove.innerHTML = "Remove";
+
+        btn_div.appendChild(btn_remove);
+
+        var br_tag = document.createElement("br");
+        cart_list.appendChild(br_tag);
+
+
+
+    });
 });
 
 

@@ -280,6 +280,13 @@ img {
     grid-template-columns: 2fr 2fr;
 }
 
+.checkOut_Remove {
+    display: grid;
+    flex-direction: row;
+    grid-gap: 8px;
+    grid-template-columns: 2fr 2fr;
+}
+
 
 
 button {

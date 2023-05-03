@@ -11,6 +11,7 @@ var jsonParser = bodyParser.json();
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 const saltRounds = 10;
 const salt = bcrypt.genSaltSync(saltRounds);
+const moment = require('moment-timezone');
 
 const db = mysql.createConnection({
     host: 'localhost',
@@ -55,29 +56,6 @@ router.get('/loggedIn_product', (req, res) => {
         'username': req.app.get('username'),
     })
 });
-
-/* router.get('/loggedIn_product', async (req, res) => {
-    const productIdMap = {
-        1: 'Black Suit',
-        2: 'Brown Suit',
-        3: 'Gray Suit',
-        4: 'Navy Blue Suit',
-    };
-
-    const db = req.app.get('db');
-    const stockQuantities = {};
-
-    for (const [id, productName] of Object.entries(productIdMap)) {
-        const [product] = await 
-        db.query('SELECT stocks FROM products WHERE id = ?', [id]);
-        stockQuantities[productName] = product.stock_quantity;
-    }
-
-    res.render('loggedIn_product', {
-        'username': req.app.get('username'),
-        'stockQuantities': stockQuantities,
-    });
-}); */
 
 
 router.get('/dashboard', (req, res) => {
@@ -145,7 +123,33 @@ router.post('/authenticate',urlencodedParser, (req, res) => {
     }
 });
 
-/* router.post('/') */
+router.post('/transaction', (req, res) => {
+    const productId = req.body.product_id;
+    const username = req.body.cart_user;
+    const statusName = "for_checkout";
+    const now = moment.tz('Asia/Manila');
+    const transactionDate = now.format('YYYY-MM-DD HH:mm:ss');
+
+    
+    const user = {
+        'username': username,
+        'product_id': productId, 
+        'transaction_date': transactionDate,
+        'completion_date': null,
+        'status': statusName,
+    };
+
+    const sql = 'INSERT INTO transactions SET ?';
+    db.query(sql, user, (err, result) => {
+        if (err) {
+            throw err;
+        }
+        else {
+            res.redirect('/loggedIn_product');
+        }
+    }) 
+
+});
 
 
 module.exports = router;
