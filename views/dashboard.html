@@ -11,13 +11,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/views/dashboard.css">       
+    <link rel="stylesheet" href="/static/dashboard.css">       
     <body>
         <header>
             <div class="info-bar" style="background-color: #354A21;">
                 <div class="container-fluid">
                     <a href="" class="navbar-brand">
-                        <img src="/public/assets/New_logo.png" alt="MMU Logo" id="logo"><h1 id="mmu_name">Match Me Up</h1>
+                        <img src="public/assets/New_logo.png" alt="MMU Logo" id="logo"><h1 id="mmu_name">Match Me Up</h1>
                     </a>
                     <nav class="navbar navbar-expand-sm" style="color: #242523">
                         <div class="container-fluid" id="navbar">
@@ -33,9 +33,9 @@
                                         <li class="nav-item">
                                             <a href="#myTransaction" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Transactions</a>
                                             <ul class="dropdown-menu dropdown-menu-end">
-                                                <li><a class="dropdown-item" href="/views/product.html">Sales</a></li>
-                                                <li><a class="dropdown-item" href="#">Appointment</a></li>
                                                 <li><a class="dropdown-item" href="#">Inventory</a></li>
+                                                <li><a class="dropdown-item" href="#">Sales</a></li>
+                                                <li><a class="dropdown-item" href="#">Appointment</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -82,13 +82,13 @@
                 <!--Nav Bar-->
                 <ul class="nav nav-tabs pt-2" role="tablist">
                     <il class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="tab" href="#sales">Sales</a>
+                        <a class="nav-link active" data-bs-toggle="tab" href="#inventory">Inventory</a>
+                    </il>
+                    <il class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#sales" id="sales-btn">Sales</a>
                     </il>
                     <il class="nav-item">
                         <a class="nav-link" data-bs-toggle="tab" href="#appointment" id="appoint-btn">Appointments</a>
-                    </il>
-                    <il class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#inventory" id="invent-btn">Inventory</a>
                     </il>
                 </ul>
 
@@ -97,8 +97,8 @@
                         <table class="table">
                             <thead>
                             <tr>
-                                <th>Date</th>
                                 <th>Transaction Number</th>
+                                <th>Date</th>
                                 <th>Item</th>
                                 <th>Unit Price</th>
                                 <th>Total</th>
@@ -134,8 +134,8 @@
                         <table class="table">
                             <thead>
                             <tr>
-                                <th>Date</th>
                                 <th>Appoitment ID</th>
+                                <th>Date</th>
                                 <th>Time</th>
                                 <th>Employee ID</th>
                             </tr>
@@ -203,7 +203,7 @@
         <br>
         <br>
         <!--Section 4 Footer-->
-        <footer>
+        <footer">
             <h6>Official Website</h6>
             <p>matchmeup.com.ph</p>
             <i class="fa fa-facebook-square" style="font-size:24px;"></i>
