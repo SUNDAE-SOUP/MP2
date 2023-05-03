@@ -46,6 +46,7 @@ router.get('/product', (req, res) => {
 router.get('/loggedIn_home', (req, res) => {
     res.render('loggedIn_home', {
         'username': req.app.get('username'),
+
     });
 });
 
@@ -54,6 +55,30 @@ router.get('/loggedIn_product', (req, res) => {
         'username': req.app.get('username'),
     })
 });
+
+/* router.get('/loggedIn_product', async (req, res) => {
+    const productIdMap = {
+        1: 'Black Suit',
+        2: 'Brown Suit',
+        3: 'Gray Suit',
+        4: 'Navy Blue Suit',
+    };
+
+    const db = req.app.get('db');
+    const stockQuantities = {};
+
+    for (const [id, productName] of Object.entries(productIdMap)) {
+        const [product] = await 
+        db.query('SELECT stocks FROM products WHERE id = ?', [id]);
+        stockQuantities[productName] = product.stock_quantity;
+    }
+
+    res.render('loggedIn_product', {
+        'username': req.app.get('username'),
+        'stockQuantities': stockQuantities,
+    });
+}); */
+
 
 router.get('/dashboard', (req, res) => {
     res.render('dashboard');
@@ -118,7 +143,9 @@ router.post('/authenticate',urlencodedParser, (req, res) => {
             }
         })
     }
-})
+});
+
+/* router.post('/') */
 
 
 module.exports = router;
