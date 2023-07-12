@@ -25,7 +25,7 @@ app.use('/', require('./route'));
 
 
 app.listen(PORT, () => {
-    console.log('All Goods at port ${PORT}')
+    console.log('All Goods at port ' + PORT)
 })
 
 module.exports = app
