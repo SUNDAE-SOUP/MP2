@@ -33,7 +33,7 @@ app.use(sessions({
     saveUninitialized: true
 }));
 
-router.get('/home', (req, res) => {
+router.get('/', (req, res) => {
     res.render('home')
     
 });
