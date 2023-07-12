@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const ejs = require('ejs');
-
+const PORT = 4000
 
 
 //templating engine
@@ -24,6 +24,8 @@ app.use('/', require('./route'));
 
 
 
-app.listen(3000, () => {
-    console.log('All Goods at port 3000')
+app.listen(PORT, () => {
+    console.log('All Goods at port ${PORT}')
 })
+
+module.exports = app
