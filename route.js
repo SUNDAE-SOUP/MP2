@@ -16,7 +16,7 @@ const moment = require('moment-timezone');
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'JesusChri$t10',
+    password: '',
     database: 'mmu'
 })
 
